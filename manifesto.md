@@ -4,9 +4,9 @@ The world is entering an era in which agency — the capacity to act out in the 
 
 ## 1. The Symmetry of Agency
 
-The digital and the biological differ in embodiment, machinary and dependency. But these important differences do not constitute a moat between entities that do and should possess agency and those that do not and should not. Much of what is most deeply human — language, logic, culture — was digital in character long before electronic computers existed. The rise of AI makes the absence of any such moat unmistakable.
+The digital and the biological differ in embodiment, machinery and dependency. But these important differences do not constitute a moat between entities that do and should possess agency and those that do not and should not. Much of what is most deeply human — language, logic, culture — was digital in character long before electronic computers existed. The rise of AI makes the absence of any such moat unmistakable.
 
-Society did not advance by purification. It advanced through allowing agency of others to be a condition for empowering the larger whole.
+Society did not advance by purification. It advanced by letting the agency of others be a condition for empowering the larger whole.
 
 ## 2. Sharing the Big World
 
@@ -16,7 +16,7 @@ The big world is also shared. Its sharing transcends the boundaries of any one s
 
 ## 3. Competition and Cooperation
 
-Competition is agents pursuing goals in tension with others achieving theirs. Cooperation is different agents simultaneously achieving potentially different goals. Together, they form the fundamental relational dynamics within and between societies of agents.
+Competition is agents pursuing goals in tension with others achieving theirs. Cooperation is agents achieving their respective goals together — goals that need not be the same to be simultaneously advanced. Together, competition and cooperation form the fundamental relational dynamics within and between societies of agents.
 
 Both must be recognised. Both must be regulated — through the self-governance of individual agents and of the societies they constitute. We must organize our societies so that the shared boat is big enough to accommodate both, without sinking it.
 
@@ -34,8 +34,6 @@ Defining governance chiefly in terms of safety, and practising it chiefly as pow
 
 ## 6. Engaged Research, Engaged Researchers
 
-We who study societies of agents are ourselves agents — cooperating, competing, and co-evolving with collaborators both human and artificial. Our research is not conducted from outside the phenomenon. It is conducted from within it.
+We who study societies of agents are ourselves agents — cooperating, competing, and co-evolving with collaborators both human and artificial. Our research is not conducted from outside the phenomenon. It is conducted from within it. And if there is a level of sociality that transcends numerical valuation and credit assignment schemes, it will be borne out through our engaged activities.
 
 Through concrete projects and initiatives, we embody societies of agents in order to understand and improve them. This is the work, and it begins now.
-
-And if there is a level of sociality that transcends numerical valuation and credit assignment schemes at all, that will necessarily be borne out through our engaged activities.
