@@ -1,0 +1,5 @@
+~~
+Antigravity Planning
+~
+In the societies/ repo in this workspace, I am working on a manifesto (in the file societies/manifesto.md). This is a manifesto addressed to the global AI research community. The focal direction of the manifesto is about embracing the new era of societies of agents, wherein agency is no longer monopolized by humans and other biological creatures, but is also from AI. I have drafted a skeletal version that was turned into Manifesto.md in the societies project. Please improve from a voice that is authoritative but inviting, open-minded but non-sentimental, well-rounded but not glib, and crucially well grounded in deep thinking and deep care of humanity and the future of a world not just for humans. Please be succinct but not using more words than what is already in the draft. And where warranted, make that structure better.
+~
