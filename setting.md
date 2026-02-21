@@ -72,7 +72,7 @@ A formal specification of the ORAC setting would include:
 3. **Credit channel (C)**: Each agent $a_i$ at each timestep emits a credit signal $c_i^t$ directed at other agents and receives credit signals from them. The credit is *cumulable* — it accumulates over time and can be aggregated.
 4. **Balance constraint**: The total credit in circulation is subject to conservation or accounting constraints — socially maintained balance sheets that enforce checks and balances. This is necessary if C is to function as currency rather than noise.
 5. **Theory of Mind (ToM)**: Adding C necessitates that agents model each other's credit-assignment strategies — a minimal form of recursive social modelling.
-6. **DACA-flow**: Decentralised, Asynchronous Credit Assignment as a flow identity — the conservation law that governs how C circulates and transforms across the social graph.
+6. **[DACA-flow](DACA-flow.md)**: Decentralised, Asynchronous Credit Assignment as a flow identity — the conservation law that governs how C circulates and transforms across the social graph.
 
 ### Relation to Game Theory
 
@@ -97,7 +97,7 @@ Before the ORAC setting can be made rigorous, a number of questions need to be a
 
 ### Dynamics
 
-5. Under what conditions do DACA-flows converge to stable credit distributions? When do they exhibit cycles, inflation, or collapse?
+5. Under what conditions do [DACA-flows](DACA-flow.md) converge to stable credit distributions? When do they exhibit cycles, inflation, or collapse?
 6. How does the timescale of credit assignment interact with the timescale of learning? If C is too slow, agents cannot learn from it; if too fast, it becomes noise.
 7. What is the right analogue of "equilibrium" in a society of learning agents exchanging C? Is it a fixed point, a limit cycle, or something else?
 
@@ -116,4 +116,4 @@ Before the ORAC setting can be made rigorous, a number of questions need to be a
 ### Empirical
 
 14. What is the simplest non-trivial system that can be analysed in terms of ORAC and that yields insight not available from standard MARL?
-15. Can DACA-flow be demonstrated in a concrete multi-agent environment — and does it produce qualitatively different social dynamics from reward-only settings?
+15. Can [DACA-flow](DACA-flow.md) be demonstrated in a concrete multi-agent environment — and does it produce qualitatively different social dynamics from reward-only settings?
