@@ -2,14 +2,18 @@
 
 ## Agent Interface Refresh
 
-Standard RL formalises the agent-environment boundary as the ORA loop: Observation, Reward, Action. We propose extending it to **ORAC**, where **C** denotes a cumulable, socially legible quantity — credit, currency, score — that an agent both emits and receives through its interactions with other agents.
+Standard RL formalises the agent-environment boundary as the ORA loop: Observation and Reward in, then Action out. We propose extending it to **ORAC**, where **C** denotes a cumulable, socially legible quantity — credit, currency, score — that an agent emits as part of its interactions with other agents in the environment.
 
-The move from ORA to ORAC is not merely additive. It restructures the agent's relationship to its environment by making explicit that part of what flows between agent and world is *social valuation* — something that cannot be reduced to a scalar reward signal optimised in isolation.
+The move from ORA to ORAC is not merely additive. It delineates the agent's relation with its environment by explicating what flows between agent and environment partly but essentially in terms of *social valuation* — something that does not reduce to optimising a scalar reward signal in isolation.
 
-### RL-Internal Motivation
+### RL-Internal Motivations
 
-- The **reward hypothesis** — that all goals can be cast as maximisation of cumulative scalar reward — holds *if the world is nice enough*. But the world is big and shared (§2 of the Manifesto). A solipsistic agent cannot model the value that other agents place on outcomes.
-- "**Reward is enough**" *if the society is wise enough* — that is, if the social fabric carries enough memory of historical negotiation, credit, and constraint to make a lone scalar signal informative. C makes that social memory explicit.
+Crucially, the proposal is compatible with the standard single-agent RL framework, especially with its founding intuitions expressed as the vintage "reward hypothesis" and the new-fangled "reward is enough" hypothesis.
+
+- The **reward hypothesis** — that all goals can be cast as maximisation of cumulative scalar reward — holds *if the world is nice enough*. But the world is big and varied. A solipsistic agent may be able to learn to maximize its reward. But it cannot be responsible for its reward stream being consistent enough so that maiximization, and thus goal specification, makes sense.
+- "**Reward is enough**" *if the society is wise enough* — that is, if the social fabric carries enough cultural memory of historical discoveries to make a stream of scalar signal informative, the architecturally solipsistic agent could acquire any cognitive capabilities.
+
+In other words, the intellectually disciplined solipsism about single-agent RL is only methodologically sound under the background assumptions of a nice enough world and a wise enough society.
 
 ### Theoretical Computer Science Motivation
 
@@ -22,22 +26,20 @@ The separation of O from R was already an abstraction that obscures the evaluati
 
 Likewise, the O vs. A distinction presupposes a clean boundary between sensing and acting that embodied agents rarely exhibit. Adding C does not resolve this; it adds a third dimension of demand on the environment specification.
 
-The honest answer: C puts enough demand on the environment that a whole society is needed to sustain it. The ORAC interface only makes sense in a multi-agent setting. This is a feature, not a bug — it forces sociality into the formalism from the start.
-
----
+The honest answer: C puts enough demand on the environment that a whole society is needed to sustain it. The ORAC interface only makes sense in a multi-agent setting. This is a feature, not a bug — it forces sociality into the formulation from the start.
 
 ## Connections to Existing Research
 
 ### Robert Brandom: Deontic Scorekeeping
 
-Brandom's *Making It Explicit* (1994) develops a model of discursive practice that is strikingly relevant to the ORAC proposal. In his framework:
+Brandom's *Making It Explicit* (1994) develops a model of discursive practice that is relevant to the ORAC proposal. In his framework:
 
 - **Inferentialism** holds that the meaning of a concept is constituted not by what it refers to, but by its role in inference — what it commits you to and what it entitles you to. Translated to the agent setting: the "meaning" of C is not a fixed label but is constituted by the inferential and practical consequences it carries across agents.
 - **Deontic scorekeeping** is Brandom's mechanism for normative pragmatics. Participants in a discursive practice keep track of each other's *commitments* (what you have bound yourself to) and *entitlements* (what you have earned the right to assert or do). Every speech act updates this score.
-- The analogy to ORAC is direct: C functions as a socially maintained ledger of commitments and entitlements among agents. When one agent assigns credit to another, it updates the deontic score — altering what the recipient is entitled to and what the assigner is committed to. The "balance sheets" mentioned in the original notes are, in Brandom's terms, deontic scoreboards.
-- **Singular reference** in Brandom's account arises from the social practice of tracking an object across different agents' perspectives. Similarly, a stable notion of "value" or "credit" in a society of agents requires that agents can track and reconcile C across distinct viewpoints — a non-trivial coordination problem.
+- The analogy to ORAC is: flow of C functions as a socially maintained ledger of commitments and entitlements among agents. When one agent assigns credit to another, it updates the deontic score — altering what the recipient is entitled to and what the assigner is committed to.
+- **Singular reference** in Brandom's account arises from the social practice of tracking an object across different agents' perspectives. Similarly, a stable notion of "value" or "credit" in a society of agents requires that agents can track and reconcile C across distinct viewpoints — a non-trivial coordination problem which is already being taken up by recent research on A2A (agent-to-agent) coordinationl protocols, even though the credit flow part is yet to be researched on.
 
-Key implication: If C is to function as social currency, its semantics must be *inferentially* constituted — maintained not by fiat but by the ongoing scorekeeping practices of the agents themselves.
+Key implication: If C is to function as social currency, its semantics must be *inferentially* constituted — maintained not by fiat but by the ongoing scorekeeping practices of the agents themselves. This is necessary because agents could "cheat". In this sense, unlike the reward signal, which is suppose to be non-negotiable and non-manipulable, the credit flow signal is negotiable and manipulable wherein the semantics is only constituted by the ongoing scorekeeping practices of the agents.
 
 ### Michael I. Jordan: Learning-Aware Mechanism Design
 
@@ -49,21 +51,17 @@ Jordan's programme at Berkeley directly addresses the gap between machine learni
 
 Key implication: The "mechanism" through which C flows is not merely a technical protocol but a designed institution — one that must be learning-aware, robust to information asymmetry, and incentive-compatible. Jordan's framework provides the mathematical tools for this design.
 
----
+## Connections to the [Principles](principles.md)
 
-## Connections to the Manifesto
+The ORAC setting operationalises several principles:
 
-The ORAC setting operationalises several principles from the Manifesto:
-
-| Manifesto Principle | ORAC Operationalisation |
+| Principle | ORAC Operationalisation |
 |---|---|
-| **Credit assignment as social dynamics** (§4) | C is the formal vehicle for inter-agent credit flow — not a scalar reward but a socially maintained quantity |
-| **Competition and cooperation** (§3) | C-dynamics encode both: cooperation as mutually beneficial credit exchange, competition as tension in credit allocation |
-| **Governance through value flow** (§5) | Governance emerges from the structure of C-flow rather than from external safety constraints imposed from above |
-| **No moat between digital and biological agency** (§1) | ORAC makes no substrate distinction — the interface is defined functionally, not materially |
-| **Sharing the big world** (§2) | The social constraint on C (balance sheets, checks and balances) formalises the shared nature of the world |
-
----
+| **Credit assignment as social dynamics** | C is the formal vehicle for inter-agent credit flow — not a scalar reward but a socially maintained quantity |
+| **Sustained competition and cooperation** | C-dynamics encode both: cooperation as mutually beneficial credit exchange, competition as tension in credit allocation |
+| **Governance through value flow** | Governance emerges from the structure of C-flow rather than from external safety constraints imposed from above |
+| **No moat between digital and biological agency** | ORAC makes no substrate distinction — the interface is defined functionally, not materially |
+| **Sharing the big world** | The social constraint on C (deontic scorekeeping, checks and balances) formalises the shared nature of the world |
 
 ## Setting
 
@@ -82,7 +80,7 @@ ORAC can be seen as an update to game theory in which:
 
 - Payoffs are not exogenous but are endogenously generated through agents' credit-assignment practices.
 - The "game" is not a one-shot or repeated static interaction but a continuously evolving social process with learning agents.
-- Equilibrium concepts must be replaced or supplemented by dynamical notions — attractors, flows, credit cycles — reflecting the non-stationary nature of societies.
+- Equilibrium concepts must be replaced or supplemented by dynamical notions — flows, credit cycles, negotiations, belief updates, and construction of belief structures — reflecting the non-stationary nature of societies.
 
 ---
 
