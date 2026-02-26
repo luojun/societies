@@ -1,13 +1,33 @@
 ~~
 Antigravity Planning - with Claude Opus 4.6
 ~
-In the societies/ repo in this workspace, I am working on a manifesto (in the file societies/manifesto.md). This is a manifesto addressed to the global AI research community. The focal direction of the manifesto is about embracing the new era of societies of agents, wherein agency is no longer monopolized by humans and other biological creatures, but is also from AI. I have drafted a skeletal version that was turned into Manifesto.md in the societies project. Please improve from a voice that is authoritative but inviting, open-minded but non-sentimental, well-rounded but not glib, and crucially well grounded in deep thinking and deep care of humanity and the future of a world not just for humans. Please be succinct but not using more words than what is already in the draft. And where warranted, make that structure better.
+In the societies/ repo in this workspace, I am working on a manifesto (in the file
+societies/manifesto.md). This is a manifesto addressed to the global AI research
+community. The focal direction of the manifesto is about embracing the new era of
+societies of agents, wherein agency is no longer monopolized by humans and other
+biological creatures, but is also from AI. I have drafted a skeletal version that
+was turned into Manifesto.md in the societies project. Please improve from a voice
+that is authoritative but inviting, open-minded but non-sentimental, well-rounded
+but not glib, and crucially well grounded in deep thinking and deep care of humanity
+and the future of a world not just for humans. Please be succinct but not using more
+words than what is already in the draft. And where warranted, make that structure better.
 ~
-Please apply your suggested changes for line 9 and line 41. For line 41, let's go with the second option. As to line 19, we need to make clear that cooperation is compatible with goals of different agents being different. Too often, people unthinkingly assume that cooperation means sharing goals. The point here is that achieving different goals together is cooperation.
+Please apply your suggested changes for line 9 and line 41. For line 41, let's go with
+the second option. As to line 19, we need to make clear that cooperation is compatible
+with goals of different agents being different. Too often, people unthinkingly assume
+that cooperation means sharing goals. The point here is that achieving different goals
+together is cooperation.
 ~~
 
 ~~
 Antigravity Planning - with Claude Opus 4.6
 ~
-In the societies/ repo, there is a file called setting.md. It currently contains some rough notes about how the RL setting could be adapted from a single-agent one to a multi-agent one by introducing another bit of interface called "C" on the output side. Please improve these notes by taking into consideration also contents in the manifesto.md. Where possible, please look into the research of Robert Brandom and Michael Jordan respectively and add more substantive content. Finally, please add an additional section called "Questions" that contains a list of questions that will likely need to be addressed before we could have a real "setting".
+In the societies/ repo, there is a file called setting.md. It currently contains some
+rough notes about how the RL setting could be adapted from a single-agent one to a
+multi-agent one by introducing another bit of interface called "C" on the output side.
+Please improve these notes by taking into consideration also contents in the manifesto.md.
+Where possible, please look into the research of Robert Brandom and Michael Jordan
+respectively and add more substantive content. Finally, please add an additional section
+called "Questions" that contains a list of questions that will likely need to be addressed
+before we could have a real "setting".
 ~

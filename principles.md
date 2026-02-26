@@ -1,10 +1,11 @@
 # Societies of Agents: Some Principles
 
-The world is entering an era in which agency — the capacity to act out in the world — is no longer the sole province of biological life, with artificial intelligence partaking in the exercise of agency. The time has come not merely to recognize and worry about this shift, but to embrace it through principled research and engaged practice. We identify a few principles to orient this effort.
+The world is entering an era in which agency — the capacity to act out in the world — is no longer the sole province of biological life. Artificial intelligence partakes in the exercise of agency in increasingly broader and deeper ways. The time has come not merely to recognize and worry about this shift, but to embrace it through principled research and engaged practice. We identify a few principles to orient this effort.
 
 ## 1. The Symmetry of Agency
 
-The digital and the biological differ in embodiment, machinery and dependency. But these important differences do not constitute a moat between entities that do and should possess agency and those that do not and should not. Much of what is deeply human — language, logic, culture — was digital in character long before electronic computers existed. The rise of AI makes the absence of any such moat unmistakable.
+The digital and the biological differ in embodiment, machinery and dependency. But these important differences do not constitute a moat between entities that do and should possess agency and those that do not and should not. Much of what is deeply human — language, logic, culture — was digitally mediated
+through perfectly replicable discrete symbols long before electronic computers existed. The rise of AI makes the absence of any such moat unmistakable.
 
 Society did not advance by purification. It advanced by letting the agency of others be a condition for empowering the larger whole while empowering themselves.
 
