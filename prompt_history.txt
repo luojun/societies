@@ -30,4 +30,27 @@ Where possible, please look into the research of Robert Brandom and Michael Jord
 respectively and add more substantive content. Finally, please add an additional section
 called "Questions" that contains a list of questions that will likely need to be addressed
 before we could have a real "setting".
+~~
+
+~~
+Cursor Plan & Build
 ~
+The DACA setting and a basic DACA-Flow environment and algorithm framework has been
+specified in the @DACA-flow.md using message routing as a case study. Next, we will want
+to turn towards some initial but detailed design, implementation, and experimentation to
+validate the DACA-Flow idea as a first instance of a design for a fully cooperative society
+of distributed agents.
+
+Please design a full plan for this round of exploration using simulated message routing
+as the case study. While using @DACA-flow.md as the core reference, please also keep in
+view the direction and principles articulated in @principles.md and @setting.md. 
+~~
+Cursor Plan
+~
+Please review the preliminary implementation and propose a project structure that puts
+the files for the message routing case study under appropriate folder structures
+that (1) clearly differentiate environment and agent, (2) clearly differentiate
+DACA setting protocol and DACA solution algorithms, (3) clearly identify experiment entry
+points and comparisons with baseline solutions, and (4) create a README for just this case
+study to explain how to run the experiments and what behavior and performance to expect.
+~~
