@@ -82,7 +82,7 @@ Additionally, we need appropriate agent interface specification:
 2. Message Action: a `TO_ID`, if observation is a `MESSAGE_HOP` and the current node is not `TARGET_ID`.
    - This action triggers a forward message delivery and sets the `TO_ID` field of the `MESSAGE_HOP` data object accordingly.
    - The "action space" here for the agent associated with a node is the set of IDs of the nodes to which it has a message link.
-3. Credit Observatin: a `CREDIT_HOP` data object with a `CREDIT` field as `C_received`.
+3. Credit Observation: a `CREDIT_HOP` data object with a `CREDIT` field as `C_received`.
 3. Credit Action: a scalar value `C` as `C_relayed`, if observation is a `CREDIT_HOP` and the current node is not `SOURCE_ID`.
    - This scalar is used by the node to trigger the actual credit delivery and to compose the backward `CREDIT_HOP` data object through filling in the `CREDIT` field of the `CREDIT_HOP` object.
    - This credit value should correspond to the overall credit that is due for the whole upstream of the messaging flow (i.e. downstream of backward credit assignment flow).
@@ -91,13 +91,25 @@ Additionally, we need appropriate agent interface specification:
 
 #### **Environment Implementation**
 
-Environment fill in the fields
-Node manage queues
-Noise
-Error handling
-Simulation loop
-Time measurement and representation
-Environment determines the delay
+Because we work under an RL perspective, "environment" here will necessarily shoulder most of the implementation of the Flow Protocol and the Agent Interface.
+
+Without spelling out the detail in full, we note a few recommendations:
+
+1. *Environment* should be responsible for the constructing and updating of the data objects required under the Flow Protocol, partly based on the Agent Interface. And the implementation of the environment is largely about *links* and *nodes*.
+
+2. *Links* between adjacent nodes may be implemented as queues, such as a forward one where `MESSAGE_HOP` objects are queued and a backward one where `CREDIT_HOP` objects are queued. Communication delays and channel properties in general could be modelled by behavior around the queues.
+
+3. *Nodes* will be responsible for assembling, enqueuing, and dequeing, the verious data objects under the Flow Protocol. Processing delay (including computation delay due to agent's decision making and learning) could be modeelled by behavior of ndoes.
+
+4. *Origin of message requests* could be modelled as some sort of stochastic process associated with nodes.
+
+5. *Noise* and *error handling* could be left out in early stages of the exploration.
+
+6. *Simulation*, when it is small scale, should be driven through a single main loop, implemented as a main simulation thread, which controls the stepping of the whole environment as well as the agents. A key concern is stepping the global time forward in a coordinated way. This is of course just so that the simulation affords fully controlled variability. Nothing here defeats the general DACA commitments.
+
+7. *Time* could be modelled and tracked in a fashion similar to the Unix timestamp, with all timestamps unified under a single integer scheme, with an integer increment by 1 assumed to correspond to a certain real time, with the simulation starts at time 0, and with the time step correspond to increment by 1, and most importantly with other dynamic steps assumed to be various multiples of the fundamental time step.
+
+8. *Network Topology* could vary a lot. But it might make sense to consider some simple ones such as (1) bi-directional corridor, (2) bi-directional circle, (3) rectangular grid, (4) multiple retangular grid linked with bottlenecks (similar to the "four room" domain), etc.
 
 ### 3. DACA-Flow Algorithm
 
